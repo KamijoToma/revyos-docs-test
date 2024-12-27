@@ -2,7 +2,7 @@ site_name: RevyOS Docs
 repo_name: revyos/docs
 repo_url: https://github.com/revyos/docs
 default_language: zh-CN
-default_language_only: true
+default_language_only: false
 theme:
   name: material
   features:
