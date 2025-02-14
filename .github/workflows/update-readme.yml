@@ -27,15 +27,11 @@ jobs:
       run: |
         sed -i 's|\(\[[^]]*\]\)(\(\./[^)]*\))|\1(https://github.com/revyos/revyos/blob/main/\2)|g' revyos/README.md
 
-    - name: Copy updated README.md to .github repository
-      run: |
-        cp revyos/README.md .github/profile/README.md
-
-    - name: Commit and push changes
-      run: |
-        cd .github
-        git config --global user.name 'github-actions[bot]'
-        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        git add profile/README.md
-        git commit -m 'Update profile README.md with changes from revyos/revyos'
-        git push
+    - name: Copy to destination repository
+      uses: andstor/copycat-action@v3
+      with:
+        personal_token: ${{ secrets.ACCESS_TOKEN }}
+        src_path: revyos/README.md
+        dst_path: /.github/profile/README.md
+        dst_owner: KamijoToma
+        dst_repo_name: revyos-github
