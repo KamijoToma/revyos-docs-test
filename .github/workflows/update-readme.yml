@@ -32,6 +32,6 @@ jobs:
       with:
         personal_token: ${{ secrets.ACCESS_TOKEN }}
         src_path: revyos/README.md
-        dst_path: /.github/profile/README.md
+        dst_path: README-revyos.docs.md
         dst_owner: KamijoToma
         dst_repo_name: revyos-github
