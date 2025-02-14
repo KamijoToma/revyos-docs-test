@@ -17,12 +17,6 @@ jobs:
         repository: revyos/revyos
         path: revyos
 
-    - name: Checkout revyos/.github repository
-      uses: actions/checkout@v2
-      with:
-        repository: KamijoToma/revyos-github
-        path: .github
-
     - name: Replace relative links in README.md
       run: |
         sed -i 's|\(\[[^]]*\]\)(\(\./[^)]*\))|\1(https://github.com/revyos/revyos/blob/main/\2)|g' revyos/README.md
@@ -31,7 +25,7 @@ jobs:
       uses: andstor/copycat-action@v3
       with:
         personal_token: ${{ secrets.ACCESS_TOKEN }}
-        src_path: revyos/README.md
+        src_path: ../revyos/README.md
         dst_path: README-revyos.docs.md
         dst_owner: KamijoToma
         dst_repo_name: revyos-github
