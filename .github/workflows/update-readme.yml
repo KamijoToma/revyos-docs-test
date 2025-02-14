@@ -38,5 +38,4 @@ jobs:
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
         git add profile/README.md
         git commit -m 'Update profile README.md with changes from revyos/revyos'
-        git config --unset-all http.https://github.com/.extraheader
         git push
