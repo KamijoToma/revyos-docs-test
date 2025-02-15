@@ -46,3 +46,4 @@ In this documentation, we provide relevant building and adaptation documentation
 ## User Group
 
 RevyOS has its own Telegram group: [Invitation Link](https://t.me/+Pi6px22-OsUxM2M1)
+We need some change!
