@@ -16,16 +16,22 @@ jobs:
       with:
         repository: revyos/docs
         path: revyos
+    
+    - name: Add a link to English version of README.md
+      run: |
+        sed -i '/^# /{n;a\
+        [English](./index.en.md)\n
+        }' revyos/docs/index.md
 
     - name: Replace relative links in README.md
       run: |
-        sed -i -E 's|(\[.*\])\(([^:]*)\)|\1(https://github.com/revyos/docs/blob/master/docs/\2)|g' revyos/docs/index.en.md
+        sed -i -E 's|(\[.*\])\(([^:]*)\)|\1(https://github.com/revyos/docs/blob/master/docs/\2)|g' revyos/docs/index.md
 
     - name: Copy to destination repository
       uses: andstor/copycat-action@v3
       with:
         personal_token: ${{ secrets.ACCESS_TOKEN }}
-        src_path: ../revyos/docs/index.en.md
+        src_path: ../revyos/docs/index.md
         dst_path: profile/README.md
         dst_owner: KamijoToma
         dst_repo_name: revyos-github
