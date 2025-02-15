@@ -19,7 +19,7 @@ jobs:
 
     - name: Replace relative links in README.md
       run: |
-        sed -i 's|\(\[[^]]*\]\)(\(\./[^)]*\))|\1(https://github.com/revyos/revyos/blob/main/\2)|g' revyos/README.md
+        sed -i -E 's|(\[.*\])\(([^:]*)\)|\1(https://github.com/revyos/docs/blob/master/docs/\2)|g' revyos/README.md
 
     - name: Copy to destination repository
       uses: andstor/copycat-action@v3
