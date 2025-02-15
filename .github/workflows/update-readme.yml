@@ -3,7 +3,7 @@ name: Update README
 on:
   push:
     paths:
-    - 'README.md'
+    - 'docs/index.en.md'
   workflow_dispatch:
 
 jobs:
@@ -14,18 +14,18 @@ jobs:
     - name: Checkout revyos/revyos repository
       uses: actions/checkout@v2
       with:
-        repository: revyos/revyos
+        repository: revyos/docs
         path: revyos
 
     - name: Replace relative links in README.md
       run: |
-        sed -i -E 's|(\[.*\])\(([^:]*)\)|\1(https://github.com/revyos/docs/blob/master/docs/\2)|g' revyos/README.md
+        sed -i -E 's|(\[.*\])\(([^:]*)\)|\1(https://github.com/revyos/docs/blob/master/docs/\2)|g' revyos/docs/index.en.md
 
     - name: Copy to destination repository
       uses: andstor/copycat-action@v3
       with:
         personal_token: ${{ secrets.ACCESS_TOKEN }}
-        src_path: ../revyos/README.md
-        dst_path: profile/
+        src_path: ../revyos/docs/index.en.md
+        dst_path: profile/README.md
         dst_owner: KamijoToma
         dst_repo_name: revyos-github
