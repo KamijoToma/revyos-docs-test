@@ -3,7 +3,7 @@ name: Update README
 on:
   push:
     paths:
-    - 'docs/index.en.md'
+    - 'docs/index.md'
   workflow_dispatch:
 
 jobs:
