@@ -32,6 +32,7 @@ export default function Home() {
               className="button button--primary button--lg"
               to="/docs/intro">
               <Translate>开始使用</Translate>
+              <span>Fun fact: cats are not dogs. AAAA</span>
             </Link>
           </div>
         </div>
