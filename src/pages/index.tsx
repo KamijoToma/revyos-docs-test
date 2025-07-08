@@ -31,7 +31,7 @@ export default function Home() {
             <Link
               className="button button--primary button--lg"
               to="/docs/intro">
-              <Translate>开始使用</Translate>
+              <Translate>开始</Translate>
             </Link>
           </div>
         </div>
