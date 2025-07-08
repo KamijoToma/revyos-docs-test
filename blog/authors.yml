@@ -1,0 +1,23 @@
+revy:
+  name: Revy
+  title: RevyOS Maintainer
+  url: https://github.com/RevySR
+  image_url: https://github.com/RevySR.png
+  socials:
+    github: RevySR
+
+skyrain:
+  name: Skyrain
+  title: Intern at RevyOS
+  url: https://github.com/KamijoToma
+  image_url: https://github.com/KamijoToma.png
+  socials:
+    github: KamijoToma
+
+nekorouter:
+  name: NekoRouter
+  title: RevyOS Maintainer
+  url: https://github.com/nekorouter
+  image_url: https://github.com/nekorouter.png
+  socials:
+    github: nekorouter
