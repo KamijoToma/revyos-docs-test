@@ -32,6 +32,7 @@ export default function Home() {
               className="button button--primary button--lg"
               to="/docs/intro">
               <Translate>开始使用</Translate>
+              <span>This is modified version for testing! Happy everyday!</span>
             </Link>
           </div>
         </div>
