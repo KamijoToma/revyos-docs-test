@@ -15,6 +15,6 @@ __RevyOS__ 围绕玄铁C906、C910、C920、C908等芯片提供了完整而全�
 
 基于上述定制和优化的 __RevyOS__，在 Lichee RV，Lichee Pi 4A 等硬件平台上，能够提供优秀的性能和极佳的体验。
 
-有关如何运行和维护此仓库的信息，请参阅[MAINTAIN.md](./MAINTAIN.md)
+有关如何运行和维护此仓库的信息，请参阅[MAINTAIN.md](./MAINTAIN.md)。
 
-For building and maintaining this repository, please follow [MAINTAIN.md](./MAINTAIN.md)
+For building and maintaining this repository, please follow [MAINTAIN.md](./MAINTAIN.md).
