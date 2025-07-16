@@ -79,6 +79,11 @@ const config: Config = {
           type: "localeDropdown",
           position: "right",
         },
+        {
+          to: 'blog',
+          label: '博客',
+          position: 'left',
+        },
       ],
     },
     footer: {
