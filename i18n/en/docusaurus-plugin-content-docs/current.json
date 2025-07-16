@@ -57,6 +57,26 @@
   },
   "sidebar.documentSidebar.category.典型应用": {
     "message": "Typical Applications",
-    "description": "The label for category Typical Applications in sidebar documentSidebar"
+    "description": "The label for category 典型应用 in sidebar documentSidebar"
+  },
+  "sidebar.documentSidebar.category.使用RevyOS推理模型": {
+    "message": "Inference Models with RevyOS",
+    "description": "The label for category 使用RevyOS推理模型 in sidebar documentSidebar"
+  },
+  "sidebar.documentSidebar.category.荔枝派4A": {
+    "message": "Lichee Pi 4A",
+    "description": "The label for category 荔枝派4A in sidebar documentSidebar"
+  },
+  "sidebar.documentSidebar.category.图像分类": {
+    "message": "Image Classification",
+    "description": "The label for category 图像分类 in sidebar documentSidebar"
+  },
+  "sidebar.documentSidebar.category.图像分类.link.generated-index.title": {
+    "message": "Examples",
+    "description": "The generated-index page title for category 图像分类 in sidebar documentSidebar"
+  },
+  "sidebar.documentSidebar.category.图像分类.link.generated-index.description": {
+    "message": "This page provides a list of examples for image classification tasks.",
+    "description": "The generated-index page description for category 图像分类 in sidebar documentSidebar"
   }
 }
